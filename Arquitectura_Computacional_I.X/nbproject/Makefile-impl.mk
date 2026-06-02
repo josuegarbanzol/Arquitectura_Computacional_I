@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Arqui.X
+PROJECTNAME=Arquitectura_Computacional_I.X
 
 # Active Configuration
 DEFAULTCONF=default
