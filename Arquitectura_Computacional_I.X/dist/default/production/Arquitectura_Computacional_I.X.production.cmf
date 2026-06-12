@@ -1,0 +1,465 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/main.o
+resetVec CODE 0 F78 F78 2 1 2
+code CODE 0 7BE 7BE 42 2 1
+udata_shr COMMON 1 70 70 3 1 1
+config CONFIG 4 8007 8007 5 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CEF 1
+RAM D20-D6F 1
+RAM DA0-DEF 1
+RAM E20-E6F 1
+RAM EA0-EEF 1
+RAM F20-F6F 1
+RAM FA0-FEF 1
+RAM 1020-106F 1
+RAM 10A0-10EF 1
+RAM 1120-116F 1
+RAM 11A0-11EF 1
+RAM 1220-126F 1
+RAM 12A0-12EF 1
+RAM 1320-136F 1
+RAM 13A0-13EF 1
+RAM 1420-146F 1
+RAM 14A0-14EF 1
+RAM 1520-156F 1
+RAM 15A0-15EF 1
+RAM 1620-166F 1
+RAM 16A0-16EF 1
+RAM 1720-176F 1
+RAM 17A0-17EF 1
+RAM 1820-186F 1
+RAM 18A0-18EF 1
+RAM 1920-196F 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 0-7BB 2
+CONST 7BD-7BD 2
+CONST 800-7FFF 2
+ENTRY 0-7BB 2
+ENTRY 7BD-7BD 2
+ENTRY 800-7FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D1F 1
+SFR27 D80-D9F 1
+SFR28 E00-E1F 1
+SFR29 E80-E9F 1
+SFR30 F00-F1F 1
+SFR32 1000-101F 1
+SFR33 1080-109F 1
+SFR34 1100-111F 1
+SFR35 1180-119F 1
+SFR36 1200-121F 1
+SFR37 1280-129F 1
+SFR38 1300-131F 1
+SFR39 1380-139F 1
+SFR40 1400-141F 1
+SFR41 1480-149F 1
+SFR42 1500-151F 1
+SFR43 1580-159F 1
+SFR44 1600-161F 1
+SFR45 1680-169F 1
+SFR46 1700-171F 1
+SFR47 1780-179F 1
+SFR48 1800-181F 1
+SFR49 1880-189F 1
+SFR50 1900-191F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+CODE 0-7BB 2
+CODE 7BD-7BD 2
+CODE 800-7FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CEF 1
+BANK26 D20-D6F 1
+BANK27 DA0-DEF 1
+BANK28 E20-E6F 1
+BANK29 EA0-EEF 1
+BANK30 F20-F6F 1
+BANK31 FA0-FEF 1
+BANK32 1020-106F 1
+BANK33 10A0-10EF 1
+BANK34 1120-116F 1
+BANK35 11A0-11EF 1
+BANK36 1220-126F 1
+BANK37 12A0-12EF 1
+BANK38 1320-136F 1
+BANK39 13A0-13EF 1
+BANK40 1420-146F 1
+BANK41 14A0-14EF 1
+BANK42 1520-156F 1
+BANK43 15A0-15EF 1
+BANK44 1620-166F 1
+BANK45 16A0-16EF 1
+BANK46 1720-176F 1
+BANK47 17A0-17EF 1
+BANK48 1820-186F 1
+BANK49 18A0-18EF 1
+BANK50 1920-196F 1
+BIGRAM 2000-2FEF 1
+COMMON 73-7F 1
+EEDATA F000-F0FF 2
+STRCODE 0-7BB 2
+STRCODE 7BD-7BD 2
+STRCODE 800-7FFF 2
+STRING 0-7BB 2
+STRING 7BD-7BD 2
+STRING 800-7FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/main.o
+F78 resetVec CODE >64:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7BE code CODE >73:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7BF code CODE >74:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C0 code CODE >77:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C1 code CODE >78:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C2 code CODE >81:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C3 code CODE >82:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C4 code CODE >83:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C5 code CODE >86:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C6 code CODE >87:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C7 code CODE >88:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C8 code CODE >91:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7C9 code CODE >92:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CA code CODE >98:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CB code CODE >99:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CC code CODE >100:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CD code CODE >102:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CE code CODE >103:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7CF code CODE >104:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D0 code CODE >107:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D1 code CODE >108:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D2 code CODE >109:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D3 code CODE >110:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D4 code CODE >112:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D5 code CODE >113:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D6 code CODE >114:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D7 code CODE >115:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D8 code CODE >116:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7D9 code CODE >119:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DA code CODE >120:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DB code CODE >121:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DC code CODE >122:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DD code CODE >124:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DE code CODE >125:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7DF code CODE >126:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E0 code CODE >127:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E1 code CODE >128:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E2 code CODE >131:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E3 code CODE >132:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E4 code CODE >133:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E5 code CODE >134:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E6 code CODE >140:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E7 code CODE >141:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E8 code CODE >143:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7E9 code CODE >144:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7EA code CODE >146:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7EB code CODE >147:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7EC code CODE >149:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7ED code CODE >150:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7EE code CODE >151:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7EF code CODE >152:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F0 code CODE >153:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F1 code CODE >154:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F2 code CODE >155:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F3 code CODE >158:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F4 code CODE >159:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F5 code CODE >161:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F6 code CODE >162:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F7 code CODE >164:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F8 code CODE >165:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7F9 code CODE >167:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FA code CODE >168:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FB code CODE >169:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FC code CODE >170:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FD code CODE >171:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FE code CODE >172:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+7FF code CODE >173:C:\Users\josue\Downloads\Arquitectura_Computacional_I\Arquitectura_Computacional_I.X\main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 F7A 0 ABS 0 - -
+__Hspace_1 73 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__LresetVec 0 0 ABS 0 resetVec -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank13 0 0 ABS 0 udata_bank13 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+__Hudata_bank15 0 0 ABS 0 udata_bank15 -
+__Hudata_bank16 0 0 ABS 0 udata_bank16 -
+__Hudata_bank17 0 0 ABS 0 udata_bank17 -
+__Hudata_bank18 0 0 ABS 0 udata_bank18 -
+__Hudata_bank19 0 0 ABS 0 udata_bank19 -
+__Hudata_bank20 0 0 ABS 0 udata_bank20 -
+__Hudata_bank21 0 0 ABS 0 udata_bank21 -
+__Hudata_bank22 0 0 ABS 0 udata_bank22 -
+__Hudata_bank23 0 0 ABS 0 udata_bank23 -
+__Hudata_bank24 0 0 ABS 0 udata_bank24 -
+__Hudata_bank25 0 0 ABS 0 udata_bank25 -
+__Hudata_bank26 0 0 ABS 0 udata_bank26 -
+__Hudata_bank27 0 0 ABS 0 udata_bank27 -
+__Hudata_bank28 0 0 ABS 0 udata_bank28 -
+__Hudata_bank29 0 0 ABS 0 udata_bank29 -
+__Hudata_bank30 0 0 ABS 0 udata_bank30 -
+__Hudata_bank31 0 0 ABS 0 udata_bank31 -
+__Hudata_bank32 0 0 ABS 0 udata_bank32 -
+__Hudata_bank33 0 0 ABS 0 udata_bank33 -
+__Hudata_bank34 0 0 ABS 0 udata_bank34 -
+__Hudata_bank35 0 0 ABS 0 udata_bank35 -
+__Hudata_bank36 0 0 ABS 0 udata_bank36 -
+__Hudata_bank37 0 0 ABS 0 udata_bank37 -
+__Hudata_bank38 0 0 ABS 0 udata_bank38 -
+__Hudata_bank39 0 0 ABS 0 udata_bank39 -
+__Hudata_bank40 0 0 ABS 0 udata_bank40 -
+__Hudata_bank41 0 0 ABS 0 udata_bank41 -
+__Hudata_bank42 0 0 ABS 0 udata_bank42 -
+__Hudata_bank43 0 0 ABS 0 udata_bank43 -
+__Hudata_bank44 0 0 ABS 0 udata_bank44 -
+__Hudata_bank45 0 0 ABS 0 udata_bank45 -
+__Hudata_bank46 0 0 ABS 0 udata_bank46 -
+__Hudata_bank47 0 0 ABS 0 udata_bank47 -
+__Hudata_bank48 0 0 ABS 0 udata_bank48 -
+__Hudata_bank49 0 0 ABS 0 udata_bank49 -
+__Hudata_bank50 0 0 ABS 0 udata_bank50 -
+__HresetVec 0 0 ABS 0 resetVec -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 10018 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 73 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank13 0 0 ABS 0 udata_bank13 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Ludata_bank15 0 0 ABS 0 udata_bank15 -
+__Ludata_bank16 0 0 ABS 0 udata_bank16 -
+__Ludata_bank17 0 0 ABS 0 udata_bank17 -
+__Ludata_bank18 0 0 ABS 0 udata_bank18 -
+__Ludata_bank19 0 0 ABS 0 udata_bank19 -
+__Ludata_bank20 0 0 ABS 0 udata_bank20 -
+__Ludata_bank21 0 0 ABS 0 udata_bank21 -
+__Ludata_bank22 0 0 ABS 0 udata_bank22 -
+__Ludata_bank23 0 0 ABS 0 udata_bank23 -
+__Ludata_bank24 0 0 ABS 0 udata_bank24 -
+__Ludata_bank25 0 0 ABS 0 udata_bank25 -
+__Ludata_bank26 0 0 ABS 0 udata_bank26 -
+__Ludata_bank27 0 0 ABS 0 udata_bank27 -
+__Ludata_bank28 0 0 ABS 0 udata_bank28 -
+__Ludata_bank29 0 0 ABS 0 udata_bank29 -
+__Ludata_bank30 0 0 ABS 0 udata_bank30 -
+__Ludata_bank31 0 0 ABS 0 udata_bank31 -
+__Ludata_bank32 0 0 ABS 0 udata_bank32 -
+__Ludata_bank33 0 0 ABS 0 udata_bank33 -
+__Ludata_bank34 0 0 ABS 0 udata_bank34 -
+__Ludata_bank35 0 0 ABS 0 udata_bank35 -
+__Ludata_bank36 0 0 ABS 0 udata_bank36 -
+__Ludata_bank37 0 0 ABS 0 udata_bank37 -
+__Ludata_bank38 0 0 ABS 0 udata_bank38 -
+__Ludata_bank39 0 0 ABS 0 udata_bank39 -
+__Ludata_bank40 0 0 ABS 0 udata_bank40 -
+__Ludata_bank41 0 0 ABS 0 udata_bank41 -
+__Ludata_bank42 0 0 ABS 0 udata_bank42 -
+__Ludata_bank43 0 0 ABS 0 udata_bank43 -
+__Ludata_bank44 0 0 ABS 0 udata_bank44 -
+__Ludata_bank45 0 0 ABS 0 udata_bank45 -
+__Ludata_bank46 0 0 ABS 0 udata_bank46 -
+__Ludata_bank47 0 0 ABS 0 udata_bank47 -
+__Ludata_bank48 0 0 ABS 0 udata_bank48 -
+__Ludata_bank49 0 0 ABS 0 udata_bank49 -
+__Ludata_bank50 0 0 ABS 0 udata_bank50 -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVec 0 F78 F78 2 1
+code 0 7BE F7C 42 2
+udata_shr 1 70 70 3 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
