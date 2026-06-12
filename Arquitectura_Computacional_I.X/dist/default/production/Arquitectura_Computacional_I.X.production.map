@@ -8,7 +8,7 @@ Linker command line:
   -h+dist/default/production\Arquitectura_Computacional_I.X.production.sym \
   --cmf=dist/default/production\Arquitectura_Computacional_I.X.production.cmf \
   -z -Q16F18877 \
-  -oC:\Users\josue\AppData\Local\Temp\xcAsh5o.0\driver_tmp_3.o \
+  -oC:\Users\josue\AppData\Local\Temp\xcAs2oc.0\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/Arquitectura_Computacional_I.X.production.map \
   -E1 -ACODE=00h-07FFhx16 -ASTRCODE=00h-07FFFh -ASTRING=00h-0FFhx128 \
